@@ -68,7 +68,7 @@
     <div class="container">
         <h1>線上抽籤程式</h1>
         <label for="drawCount">請輸入要抽出幾個籤：</label>
-        <input type="number" id="drawCount" value="2" placeholder="請輸入數量">
+        <input type="number" id="drawCount" value="3" placeholder="請輸入數量">
         <label for="ticketInput">輸入籤的內容：</label>
         <textarea id="ticketInput">
 54201 施O睿
@@ -102,12 +102,9 @@
             } else {
                 // 紅色清除按鈕 → 固定正取＆固定備取
 let fixedSelected = [
-    "54203 葉O熒",
-    "54201 施O睿"
 ];
 
 let fixedBackup = [
-    "54202 陳O彤"  // 備取1
 ];
 
                 shuffled = shuffled.filter(ticket => !fixedSelected.includes(ticket) && !fixedBackup.includes(ticket));
